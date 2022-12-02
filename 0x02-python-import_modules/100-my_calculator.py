@@ -6,6 +6,7 @@ from calculator_1 import add, sub, mul, div
 
 def main(argv: list):
     if len(argv) != 4:
+        print(argv)
         print('Usage: {} <a> <operator> <b>'.format(argv[0]))
         sys.exit(1)
 
