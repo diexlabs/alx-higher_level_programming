@@ -6,6 +6,11 @@ Attributes:
     None
 '''
 
+
 class Square:
-    """An empty python class"""
+    """An empty python class
+
+    Attributes:
+        `None`
+    """
     pass
