@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+'''A module containing a `Square` klas'''
+
+
 class Square:
     '''Square klas with a size private instance attribute'''
 
