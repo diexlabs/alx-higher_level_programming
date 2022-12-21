@@ -64,4 +64,16 @@ class Square:
 
     def __str__(self) -> str:
         '''prints out the square instance to stdout'''
-        self.my_print()
+        s = ''
+        if self.size == 0:
+            return '\n'
+        else:
+            i = 0
+            while i < self.position[1]:
+                s += '\n'
+                i += 1
+            for i in range(self.size):
+                s += " " * self.position[0]
+                s += "#" * self.size
+                s += "\n"
+        return s
