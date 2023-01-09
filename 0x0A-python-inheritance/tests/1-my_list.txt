@@ -1,0 +1,26 @@
+=================================
++    Test for 1-my_list.py      +
+=================================
+
+import the module
+>>> MyList = __import__('1-my_list').MyList
+
+instance of MyList
+>>> ml = MyList()
+>>> ml
+[]
+
+populate ml with integers
+>>> for i in [1, 3, 9, 4, 7, 0, 5, 20, 11]:
+...     ml.append(i)
+>>> ml.append(30)
+
+check that ml is rightly populated
+>>> len(ml)
+10
+>>> ml
+[1, 3, 9, 4, 7, 0, 5, 20, 11, 30]
+
+Check that print_sorted method works
+>>> ml.print_sorted()
+[0, 1, 3, 4, 5, 7, 9, 11, 20, 30]
