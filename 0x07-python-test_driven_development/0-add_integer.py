@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 '''A module for `add_integer `function`'''
 
+
 def add_integer(a, b=98):
     '''returns the sum of two integers
-    
+
     Raises:
         TypeError: if either a or b is not int or float
     Returns:

@@ -10,6 +10,14 @@ instance of MyList
 >>> ml
 []
 
+is a subclass of list
+>>> issubclass(MyList, list)
+True
+
+ml is an instance of MyList
+>>> type(ml) is MyList
+True
+
 empty list works
 >>> ml.print_sorted()
 []
