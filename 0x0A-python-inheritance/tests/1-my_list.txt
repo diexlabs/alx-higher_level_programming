@@ -10,6 +10,10 @@ instance of MyList
 >>> ml
 []
 
+empty list works
+>>> ml.print_sorted()
+[]
+
 populate ml with integers
 >>> for i in [1, 3, 9, 4, 7, 0, 5, 20, 11]:
 ...     ml.append(i)
@@ -24,3 +28,9 @@ check that ml is rightly populated
 Check that print_sorted method works
 >>> ml.print_sorted()
 [0, 1, 3, 4, 5, 7, 9, 11, 20, 30]
+
+negative values is correctly handled
+>>> ml.append(-1)
+>>> ml.append(-5)
+>>> ml.print_sorted()
+[-5, -1, 0, 1, 3, 4, 5, 7, 9, 11, 20, 30]
