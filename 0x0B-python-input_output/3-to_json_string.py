@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''A module for a function that returns a json repr of 
+'''A module for a function that returns a json repr of
 object to standard out
 '''
 

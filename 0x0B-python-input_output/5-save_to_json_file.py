@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''A module for a function that writes a 
+'''A module for a function that writes a
 json encoded string to file
 '''
 

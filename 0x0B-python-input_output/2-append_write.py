@@ -7,10 +7,10 @@ def append_write(filename="", text=""):
     Args:
         filename (str) - the name of the file
         text (str) - the text string to append
-        
+
     Return total - the number of characters written
     '''
     with open(filename, 'a', encoding='utf-8') as f:
         total = f.write(text)
-    
+
     return total

@@ -4,9 +4,9 @@
 
 
 def read_file(filename=""):
-    '''reads all the contents of a file and prints 
+    '''reads all the contents of a file and prints
     to standard output
-    
+
     Args:
         filename (str) - the name of file to read
     '''
