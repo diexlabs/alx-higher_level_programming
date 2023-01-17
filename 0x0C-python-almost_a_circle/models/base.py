@@ -97,6 +97,7 @@ class Base:
             return [cls.create(**obj) for obj in objs]
 
     def draw(list_rectangles, list_squares):
+        '''receives a list of shapes and draws them on screen'''
         SPACING = 20
 
         t = turtle.Turtle()
@@ -123,6 +124,7 @@ class Base:
         time.sleep(60)
 
     def trace_rect(t, rectangle):
+        '''Traces out a rectangle and returs to exact coorditnates'''
         t.setheading(-90)
         t.begin_fill()
         t.pendown()
@@ -138,6 +140,7 @@ class Base:
         t.penup()
 
     def draw_margin(t):
+        '''draws a seperator to demarcate squares and rectangles'''
         t.setheading(0)
         t.penup()
         t.forward(50)
