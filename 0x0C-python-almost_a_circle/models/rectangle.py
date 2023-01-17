@@ -8,6 +8,17 @@ class Rectangle(Base):
     '''A rectangle klas inheriting from base'''
 
     def __init__(self, width, height, x=0, y=0, id=None) -> None:
+        '''initializes a rectangle klas given params
+        Args:
+            width (int) - width of instance
+            height (int) - height of instance
+            x (int) - x cordinate of instance. Defaults to 0
+            y (int) - y cordinate of instance. Defaults to 0
+            id (int) - id of instance
+            
+        Note:
+            this method initializes superclass with id
+        '''
         super().__init__(id)
         self.height = height
         self.width = width

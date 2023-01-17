@@ -97,7 +97,13 @@ class Base:
             return [cls.create(**obj) for obj in objs]
 
     def draw(list_rectangles, list_squares):
-        '''receives a list of shapes and draws them on screen'''
+        '''receives a list of shapes and draws them on screen
+        Args:
+            list_rectangles (obj: list) - list of rectangle objs
+            list_squares (obj: list) - list of square objects
+        Note:
+            draws out all the shapes on screen
+        '''
         SPACING = 20
 
         t = turtle.Turtle()
