@@ -9,7 +9,7 @@ fs.readFile(first, (err, data) => {
     console.log(err);
   }
 
-  fs.writeFile(dest, data, (err) => {
+  fs.writeFile(dest, data + '\n', (err) => {
     console.log(err);
   });
 });
