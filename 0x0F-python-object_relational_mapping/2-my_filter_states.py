@@ -5,8 +5,9 @@ import MySQLdb
 import sys
 
 
-def run_script(username, password, database, name):
-    '''connects to a database and prints filtered records'''
+if __name__ == '__main__':
+    username, password, database, name = sys.argv[1:5]
+
     db = MySQLdb.connect(
         host='localhost',
         port=3306,
@@ -26,8 +27,3 @@ def run_script(username, password, database, name):
         for row in cur.fetchall():
             print(row)
     db.close()
-
-
-if __name__ == '__main__':
-    username, password, database, name = sys.argv[1:5]
-    run_script(username, password, database, name)
