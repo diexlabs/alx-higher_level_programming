@@ -15,7 +15,14 @@ def run_script(username, password, database):
         db=database
     )
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY 'id'")
+    cur.execute(
+        """
+        SELECT *
+            FROM states
+            WHERE name LIKE BINARY 'N%'
+            ORDER BY 'id'
+        """
+    )
     for row in cur.fetchall():
         print(row)
 
