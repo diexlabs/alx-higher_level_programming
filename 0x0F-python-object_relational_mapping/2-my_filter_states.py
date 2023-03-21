@@ -14,10 +14,11 @@ def run_script(username, password, database, name):
         passwd=password,
         db=database
     )
-    cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name = %s ORDER BY 'id'", (name,))
-    for row in cur.fetchall():
-        print(row)
+    with db.cursor() as cur:
+        cur.execute("SELECT * FROM states WHERE name LIKE BINARY %s ORDER BY 'id'", (name,))
+        for row in cur.fetchall():
+            print(row)
+    db.close()
 
 
 if __name__ == '__main__':
