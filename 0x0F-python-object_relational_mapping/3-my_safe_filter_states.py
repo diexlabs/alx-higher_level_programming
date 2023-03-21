@@ -19,6 +19,7 @@ def run_script(username, password, database, name):
     for row in cur.fetchall():
         print(row)
 
+
 if __name__ == '__main__':
     username, password, database, name = sys.argv[1:5]
     run_script(username, password, database, name)
