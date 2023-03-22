@@ -2,7 +2,7 @@
 '''A Model class for City'''
 
 from sqlalchemy import Column, Integer, String, Sequence, ForeignKey
-from model_state import Base
+from relationship_state import Base
 from sqlalchemy.orm import relationship
 
 
@@ -26,11 +26,11 @@ class City(Base):
     name = Column(String(128), nullable=False)
     state_id = Column(
         Integer,
-        ForeignKey('states.id'),
+        ForeignKey('states.id', ondelete='CASCADE'),
         nullable=False
     )
 
-    state = relationship('State')
+    state = relationship('State', )
 
     def __repr__(self) -> str:
         return f'<City(id={self.id} name={self.name} \

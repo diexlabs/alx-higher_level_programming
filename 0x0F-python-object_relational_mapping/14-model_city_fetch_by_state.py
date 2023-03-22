@@ -3,8 +3,8 @@
 
 import sys
 from sqlalchemy import create_engine
-from model_city import City
-from model_state import Base, State
+from relationship_city import City
+from relationship_state import Base, State
 from sqlalchemy.orm import sessionmaker
 
 
