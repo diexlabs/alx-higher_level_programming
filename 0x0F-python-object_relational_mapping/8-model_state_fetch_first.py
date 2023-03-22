@@ -18,6 +18,6 @@ if __name__ == '__main__':
 
     state = sess.query(State).order_by(State.id).first()
     if not state:
-        print('Nothing\n')
+        print('Nothing')
     else:
         print(f'{state.id}: {state.name}')
