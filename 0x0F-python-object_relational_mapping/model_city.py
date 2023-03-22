@@ -7,6 +7,14 @@ from sqlalchemy.orm import relationship
 
 
 class City(Base):
+    '''A class modelling a city
+    Attributes
+    ----------
+    id(int) - primary key
+    name(str) - name of city
+    state_id(int) - foreign key to state
+    '''
+
     __tablename__ = 'cities'
 
     id = Column(
