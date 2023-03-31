@@ -1,0 +1,19 @@
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.23.3
+Date: Fri, 31 Mar 2023 22:19:56 GMT
+Content-Type: text/html
+Content-Length: 169
+Connection: keep-alive
+Location: https://diexlabs.com/
+
+HTTP/1.1 200 OK
+Server: nginx/1.23.3
+Date: Fri, 31 Mar 2023 22:19:57 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 29231
+Connection: keep-alive
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
