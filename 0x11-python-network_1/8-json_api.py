@@ -13,7 +13,7 @@ if __name__ == '__main__':
         q = ""
 
     params = {'q': q}
-    res = requests.get(url, params=params, allow_redirects=True)
+    res = requests.post(url, data=params, allow_redirects=True)
 
     try:
         j = res.json()

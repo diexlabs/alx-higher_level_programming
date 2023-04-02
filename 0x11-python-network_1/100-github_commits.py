@@ -17,7 +17,10 @@ if __name__ == '__main__':
         'per_page': 10
     }
 
-    res = requests.get(endpoint, headers=headers)
+    res = requests.get(endpoint, params=params, headers=headers)
     if res.status_code == 200:
         for commit in res.json()[:10]:
-            print(f'{commit["sha"]} {commit["commit"]["author"]["name"]}')
+            print('{} {}'.format(
+                commit["sha"],
+                commit["commit"]["author"]["name"])
+            )
